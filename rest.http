@@ -1,0 +1,35 @@
+GET http://localhost:3000
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE3MjI3MTAxMDcsImV4cCI6MTcyMjcxMDExNywiYXVkIjoiNjY5ZDMzODUxZmUxMTk1YmZmZTI3M2Y4IiwiaXNzIjoic29tZXRoaW5nLmNvbSJ9.PhrmbdbXY6gIm9C5qrbXUpxb0wybGIBKvsczmGtL3sg
+
+####
+POST http://localhost:3000/auth/login
+Content-Type: application/json
+
+
+{
+    "email":"testuser12111eee@gmail.com",
+    "password":"1234"
+}
+
+
+####
+POST http://localhost:3000/auth/register
+Content-Type: application/json
+
+
+{
+    "email":"testuser12111eee@gmail.com",
+    "password":"1234"
+}
+
+####
+POST http://localhost:3000/auth/refresh-token
+Content-Type: application/json
+
+
+{
+    "refreshToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE3MjI3MTQ1ODksImV4cCI6MTc1NDI3MjE4OSwiYXVkIjoiNjY5ZDMzODUxZmUxMTk1YmZmZTI3M2Y4IiwiaXNzIjoic29tZXRoaW5nLmNvbSJ9.FufUTUTiney9B5yvTwkxXawuZaDilvVvYrHL56UHYfo"
+}
+
+####
+DELETE http://localhost:3000/auth/logout
